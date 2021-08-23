@@ -7,3 +7,8 @@ skaffold run --tail
 ```
 helm install otus ./k8s/user_service -n otus
 ```
+
+После развертывания приложения можно запустить postman тесты командой:
+```
+newman run otus-06.postman_collection.json
+```
